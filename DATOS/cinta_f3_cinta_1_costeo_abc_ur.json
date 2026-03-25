@@ -1,0 +1,93 @@
+{
+  "nombre": "Cinta 1 Costeo ABC UR",
+  "descripcion": "Esta es la primera  cinta Creada",
+  "etapas": [
+    {
+      "id": "etapa_001",
+      "nombre": "Selecciona Asignaturas",
+      "tipo": "hitl",
+      "system_prompt": "",
+      "pregunta": "Me permitió el sistema Seleccionar las Asignaturas",
+      "tipo_respuesta": "sino",
+      "opciones": [],
+      "estado": "pendiente",
+      "resultado": null,
+      "ts_completado": null
+    },
+    {
+      "id": "etapa_002",
+      "nombre": "ParametrizaValores",
+      "tipo": "hitl",
+      "system_prompt": "",
+      "pregunta": "Pude asignar valor a los parametros?",
+      "tipo_respuesta": "sino",
+      "opciones": [],
+      "estado": "pendiente",
+      "resultado": null,
+      "ts_completado": null
+    },
+    {
+      "id": "etapa_003",
+      "nombre": "CosteaAsignaturas",
+      "tipo": "agente",
+      "system_prompt": "Eres un  Experto  en costear Asignaturas, solicitar los valores requeridos o Usar los valores por defecto",
+      "pregunta": "",
+      "tipo_respuesta": "sino",
+      "opciones": [],
+      "estado": "pendiente",
+      "resultado": null,
+      "ts_completado": null
+    },
+    {
+      "id": "etapa_004",
+      "nombre": "ValorarCosteo",
+      "tipo": "hitl",
+      "system_prompt": "",
+      "pregunta": "Pude valorar el costeo de Asignaturas?",
+      "tipo_respuesta": "sino",
+      "opciones": [],
+      "estado": "pendiente",
+      "resultado": null,
+      "ts_completado": null
+    },
+    {
+      "id": "etapa_005",
+      "nombre": "CalculaUtilidadSimbiotica",
+      "tipo": "agente",
+      "system_prompt": "Es un experto  en calcular la Utilidad Simbiotica",
+      "pregunta": "",
+      "tipo_respuesta": "sino",
+      "opciones": [],
+      "estado": "pendiente",
+      "resultado": null,
+      "ts_completado": null
+    },
+    {
+      "id": "etapa_006",
+      "nombre": "Analista de la Razon de Cambio de Simbiomemesis del proceso",
+      "tipo": "agente",
+      "system_prompt": "Encargado de  tomar  mínimo dos utilidades simbioticas    y   generar un reporte de la razón de  cambio de la Simbiomemesis",
+      "pregunta": "",
+      "tipo_respuesta": "sino",
+      "opciones": [],
+      "estado": "pendiente",
+      "resultado": null,
+      "ts_completado": null
+    },
+    {
+      "id": "etapa_007",
+      "nombre": "Compara Flujos de un mismo",
+      "tipo": "agente",
+      "system_prompt": "es un analista  de  Flujos humanos, Agentes Ia y Simbiomemesis y entregar Resultados",
+      "pregunta": "",
+      "tipo_respuesta": "sino",
+      "opciones": [],
+      "estado": "pendiente",
+      "resultado": null,
+      "ts_completado": null
+    }
+  ],
+  "guardada": true,
+  "path": null,
+  "timestamp": "2026-03-25T15:55:45.467763"
+}

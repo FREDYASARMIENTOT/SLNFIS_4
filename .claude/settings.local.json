@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/home/fredyast/miniconda/envs/venvFIS_Rosario/bin/python -c \"import utils.loader_oferta; print\\(''OK:'', utils.loader_oferta._EXCEL_PATH\\)\")",
+      "Bash(curl -s -o /dev/null -w \"Flujo humano HTTP: %{http_code}\\\\n\" http://localhost:8501/flujo_humano)",
+      "Read(//tmp/**)"
+    ]
+  }
+}

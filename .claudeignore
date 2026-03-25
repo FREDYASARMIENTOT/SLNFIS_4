@@ -1,0 +1,51 @@
+# --- Dependencias y Entornos Virtuales (MUY PESADOS) ---
+node_modules/
+venv*/
+.venv*/
+env/
+.env/
+bin/
+lib/
+share/
+Include/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Datos y Archivos Binarios (EL MAYOR GASTO) ---
+# Veo que usas archivos de Excel grandes, no dejes que Claude los "lea" completos
+*.xlsx
+*.xls
+*.csv
+*.json
+*.parquet
+*.db
+*.sqlite3
+
+# --- IDEs y Herramientas ---
+.vscode/
+.idea/
+.git/
+.gitignore
+.claude/
+.DS_Store
+*.swp
+
+# --- Logs y Temporales ---
+*.log
+logs/
+temp/
+tmp/
+dist/
+build/
+*.egg-info/
+
+# --- Multimedia ---
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.pdf
+*.mp4

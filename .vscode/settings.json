@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "/home/fredyast/miniconda/envs/venvFIS_Rosario/bin/python",
+    "python.analysis.extraPaths": [
+        "/home/fredyast/miniconda/envs/venvFIS_Rosario/lib/python3.12/site-packages"
+    ]
+}

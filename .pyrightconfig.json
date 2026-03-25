@@ -1,0 +1,7 @@
+{
+  "venvPath": "/home/fredyast/miniconda/envs",
+  "venv": "venvFIS_Rosario",
+  "extraPaths": [
+    "/home/fredyast/miniconda/envs/venvFIS_Rosario/lib/python3.12/site-packages"
+  ]
+}
