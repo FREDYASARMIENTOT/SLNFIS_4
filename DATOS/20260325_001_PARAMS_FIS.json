@@ -1,0 +1,25 @@
+{
+  "tipo": "PARAMS_FIS",
+  "cinta": "Cinta 2  Costeo Abc Ur",
+  "etapa": "parametrosCosteo",
+  "etapa_id": "etapa_002",
+  "periodo": "2026-I",
+  "num_grupos": 3,
+  "num_clases": 10,
+  "num_profesores": 2,
+  "num_estudiantes": 10,
+  "horas_por_clase": 2,
+  "valor_hora_prof": 100000.0,
+  "metros_cuadrados": 50.0,
+  "valor_m2": 1500.0,
+  "tipo_salon": "Básico (Video beam + PC Profesor)",
+  "valor_licencias_base": 500000.0,
+  "valor_licencias": 500000.0,
+  "_auditoria": {
+    "patron": "PARAMS_FIS",
+    "archivo": "20260325_001_PARAMS_FIS.json",
+    "ruta": "/home/fredyast/projects/SLNFIS_4/DATOS/20260325_001_PARAMS_FIS.json",
+    "timestamp": "2026-03-25T21:59:24.749257",
+    "version": "FIS-v8.1"
+  }
+}

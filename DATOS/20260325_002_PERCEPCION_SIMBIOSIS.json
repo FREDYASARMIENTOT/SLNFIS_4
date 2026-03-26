@@ -1,0 +1,45 @@
+{
+  "tipo": "PERCEPCION_SIMBIOSIS",
+  "cinta": "Cinta 2  Costeo Abc Ur",
+  "etapa": "formulario_hitl_utilidad",
+  "etapa_id": "etapa_004",
+  "n_experimento": 2,
+  "entrada": {
+    "costo_directo_asignaturas": 22125000.0,
+    "inductor_actividad_valor": 0.9,
+    "tiempo_proceso_iteracion": 1,
+    "utilidad_anterior_pinecone": 0.0005,
+    "peso_autonomia_agente": 0.87,
+    "calificacion_q1_precision": 4,
+    "calificacion_q2_agente": 4,
+    "calificacion_q3_transparencia": 3,
+    "calificacion_q4_confianza": 4
+  },
+  "resultado_u": {
+    "valor_utilidad_u_final": 26.15421118,
+    "componente_eficiencia_abc": 16.912219,
+    "componente_validacion_humana_normalizada": 0.7875,
+    "factor_atenuacion_temporal": 0.9900498337491681,
+    "formula_matematica": "U = (α * log(C)) * (H_norm + e^-t)",
+    "trazabilidad_pasos": [
+      "1. Eficiencia ABC (log1p): 16.9122",
+      "2. Componente Ponderado Agente (α * Ef): 14.7136",
+      "3. Normalización HITL (Promedio 0-1): 0.6875 -> Confianza Base: 0.7875",
+      "4. Atenuación Temporal (e^-t): 0.9900",
+      "5. Ensamble Final: 14.7136 * (0.7875 + 0.9900)"
+    ]
+  },
+  "delta_u_vs_anterior": 0.0,
+  "archivo_costeo_origen": "20260325_001_COSTEO_ABC_UR.json",
+  "costo_total_costeo": 22125000.0,
+  "seleccion_asignaturas": [
+    "BLOCKCHAIN"
+  ],
+  "_auditoria": {
+    "patron": "PERCEPCION_SIMBIOSIS",
+    "archivo": "20260325_002_PERCEPCION_SIMBIOSIS.json",
+    "ruta": "/home/fredyast/projects/SLNFIS_4/DATOS/20260325_002_PERCEPCION_SIMBIOSIS.json",
+    "timestamp": "2026-03-25T22:13:35.291011",
+    "version": "FIS-v8.1"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "tipo": "SIMBIOMEMESIS",
+  "cinta": "Cinta 2  Costeo Abc Ur",
+  "etapa": "AnalizaSimbiomemesis",
+  "etapa_id": "etapa_007",
+  "archivo_t1": "20260325_001_PERCEPCION_SIMBIOSIS.json",
+  "archivo_t2": "20260325_003_PERCEPCION_SIMBIOSIS.json",
+  "estado_evolutivo": "🟡 ESTABILIDAD (Simbiosis Neutra)",
+  "derivadas": {
+    "delta_U": 0.0,
+    "dU_dt": 0.0,
+    "gradiente_costo": 0.0
+  },
+  "recomendacion": "El sistema alcanzó un óptimo local. No se requieren ajustes mayores.",
+  "resultado_completo": {
+    "delta_utilidad_total": 0.0,
+    "derivada_temporal_simbiomemesis": 0.0,
+    "sensibilidad_al_costo_gradiente": 0.0,
+    "estado_evolutivo_sistema": "🟡 ESTABILIDAD (Simbiosis Neutra)",
+    "recomendacion_agente_analista": "El sistema alcanzó un óptimo local. No se requieren ajustes mayores.",
+    "trazabilidad_matematica": [
+      "1. Diferencial de Utilidad (ΔU): 0.000000",
+      "2. Diferencial de Tiempo (Δt): 0",
+      "3. Diferencial de Costo (ΔC): 0.00",
+      "4. Simbiomemesis (dU/dt): 0.000000",
+      "5. Gradiente de Costo (∂U/∂C): 0.00000000"
+    ]
+  },
+  "timestamp_analisis": "2026-03-25T22:22:50.064820",
+  "_auditoria": {
+    "patron": "SIMBIOMEMESIS",
+    "archivo": "20260325_001_SIMBIOMEMESIS.json",
+    "ruta": "/home/fredyast/projects/SLNFIS_4/DATOS/20260325_001_SIMBIOMEMESIS.json",
+    "timestamp": "2026-03-25T22:22:50.070361",
+    "version": "FIS-v8.1"
+  }
+}

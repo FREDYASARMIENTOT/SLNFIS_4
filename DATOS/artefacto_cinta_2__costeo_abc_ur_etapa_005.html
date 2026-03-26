@@ -1,0 +1,24 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><title>calculaUtilidadSimbiotica</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>body{font-family:Inter,sans-serif;background:#0d1117;color:#e0e0e0;padding:12px;margin:0;}
+h3{color:#81c784;margin:0 0 4px;font-size:1.05em;}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px;}
+.card{background:#1e1e2e;border-left:4px solid #2e7d32;border-radius:7px;padding:9px 12px;}
+.card .label{color:#aaa;font-size:.74em;text-transform:uppercase;}
+.card .value{color:#81c784;font-size:1.3em;font-weight:700;}
+.card .delta{color:#ffb300;font-size:.78em;}canvas{max-height:170px;}
+</style></head><body>
+<h3>📊 calculaUtilidadSimbiotica</h3><p style="color:#aaa;font-size:.82em;margin:0 0 10px">Genera  el Dashboard</p>
+<div class="grid">
+<div class="card"><div class="label">Costo Total</div><div class="value">$2.48M</div><div class="delta">↑ 3.2%</div></div>
+<div class="card"><div class="label">Asignaturas</div><div class="value">14</div><div class="delta">Sin cambio</div></div>
+<div class="card"><div class="label">Utilidad Simbiótica</div><div class="value">87.4</div><div class="delta">↑ 1.8pts</div></div>
+</div><canvas id="d"></canvas>
+<script>new Chart(document.getElementById('d').getContext('2d'),{type:'line',
+data:{labels:['Ene','Feb','Mar','Abr','May','Jun'],
+datasets:[{label:'Costo ($M)',data:[2.1,2.3,2.2,2.4,2.5,2.48],
+borderColor:'#81c784',backgroundColor:'rgba(46,125,50,.15)',fill:true,tension:.4,
+pointBackgroundColor:'#81c784'}]},
+options:{responsive:true,plugins:{legend:{labels:{color:'#e0e0e0'}}},
+scales:{x:{ticks:{color:'#aaa'},grid:{color:'#333'}},y:{ticks:{color:'#aaa'},grid:{color:'#333'}}}
+}});</script></body></html>

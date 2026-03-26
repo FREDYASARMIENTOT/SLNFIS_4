@@ -1,0 +1,68 @@
+{
+  "tipo": "COSTEO_ABC_UR",
+  "cinta": "Cinta 2  Costeo Abc Ur",
+  "etapa": "CosteoAsignaturas",
+  "etapa_id": "etapa_003",
+  "periodo": "2026-I",
+  "n_asignaturas": 1,
+  "total_general": 22125000.0,
+  "costo_promedio_asig": 22125000.0,
+  "costo_unitario_est": 737500.0,
+  "rubros": {
+    "Costo Docente": 12000000.0,
+    "Costo Espacio": 2250000.0,
+    "Costo Licencias": 500000.0,
+    "Costo Indirecto (50%)": 7375000.0
+  },
+  "seleccion": {
+    "facultades": [
+      "ESCUELA DE ADMINISTRACIÓN"
+    ],
+    "programas": [
+      "ADMINISTRACIÓN DE EMPRESAS"
+    ],
+    "asignaturas": [
+      "BLOCKCHAIN"
+    ]
+  },
+  "parametros": {
+    "cinta": "Cinta 2  Costeo Abc Ur",
+    "etapa": "parametrosCosteo",
+    "etapa_id": "etapa_002",
+    "periodo": "2026-I",
+    "num_grupos": 3,
+    "num_clases": 10,
+    "num_profesores": 2,
+    "num_estudiantes": 10,
+    "horas_por_clase": 2,
+    "valor_hora_prof": 100000.0,
+    "metros_cuadrados": 50.0,
+    "valor_m2": 1500.0,
+    "tipo_salon": "Básico (Video beam + PC Profesor)",
+    "valor_licencias_base": 500000.0,
+    "valor_licencias": 500000.0
+  },
+  "filas": [
+    {
+      "asignatura": "BLOCKCHAIN",
+      "costo_docente": 12000000.0,
+      "costo_espacio_m2": 2250000.0,
+      "costo_licencias": 500000.0,
+      "total_directos": 14750000.0,
+      "costo_indirecto_50pct": 7375000.0,
+      "costo_total": 22125000.0,
+      "costo_por_sesion": 737500.0,
+      "costo_por_estudiante": 737500.0,
+      "sesiones_totales": 30,
+      "estudiantes_totales": 30
+    }
+  ],
+  "tiempo_motor_fis_segundos": 0.0,
+  "_auditoria": {
+    "patron": "COSTEO_ABC_UR",
+    "archivo": "20260325_001_COSTEO_ABC_UR.json",
+    "ruta": "/home/fredyast/projects/SLNFIS_4/DATOS/20260325_001_COSTEO_ABC_UR.json",
+    "timestamp": "2026-03-25T22:03:22.860828",
+    "version": "FIS-v8.1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "tipo": "SELECCION_FIS",
+  "cinta": "Cinta 2  Costeo Abc Ur",
+  "etapa": "SeleciónAsignaturas",
+  "etapa_id": "etapa_001",
+  "facultades": [
+    "ESCUELA DE ADMINISTRACIÓN"
+  ],
+  "programas": [
+    "ADMINISTRACIÓN DE EMPRESAS"
+  ],
+  "asignaturas": [
+    "BLOCKCHAIN"
+  ],
+  "n_asignaturas": 1,
+  "etapa_origen": "SeleciónAsignaturas",
+  "cinta_nombre": "Cinta 2  Costeo Abc Ur",
+  "_auditoria": {
+    "patron": "SELECCION_FIS",
+    "archivo": "20260325_001_SELECCION_FIS.json",
+    "ruta": "/home/fredyast/projects/SLNFIS_4/DATOS/20260325_001_SELECCION_FIS.json",
+    "timestamp": "2026-03-25T21:55:07.923987",
+    "version": "FIS-v8.1"
+  }
+}

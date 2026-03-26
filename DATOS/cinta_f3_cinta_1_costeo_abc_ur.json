@@ -12,7 +12,25 @@
       "opciones": [],
       "estado": "pendiente",
       "resultado": null,
-      "ts_completado": null
+      "ts_completado": null,
+      "chat_history": [
+        {
+          "role": "user",
+          "content": "en esta  etapa  debemos  poder  seleccionar   de la  jerarquia  abuelo - padre- hijo  como en los otros  flujos   miltiple seleccion de  facultad , programa  y asignatura , puedes  en tiempo de ejecucion  en esta  pestaña  añadir esa funcionalidad"
+        },
+        {
+          "role": "assistant",
+          "content": "Validación concluida. Archivos intermedios y registros del FIS sincronizados."
+        },
+        {
+          "role": "user",
+          "content": "dime cuantos  token  gastas?"
+        },
+        {
+          "role": "assistant",
+          "content": "Los parámetros se ven adecuados en este contexto. Puedes proceder con la ejecución."
+        }
+      ]
     },
     {
       "id": "etapa_002",
@@ -24,7 +42,8 @@
       "opciones": [],
       "estado": "pendiente",
       "resultado": null,
-      "ts_completado": null
+      "ts_completado": null,
+      "chat_history": []
     },
     {
       "id": "etapa_003",
@@ -36,7 +55,8 @@
       "opciones": [],
       "estado": "pendiente",
       "resultado": null,
-      "ts_completado": null
+      "ts_completado": null,
+      "chat_history": []
     },
     {
       "id": "etapa_004",
@@ -48,7 +68,8 @@
       "opciones": [],
       "estado": "pendiente",
       "resultado": null,
-      "ts_completado": null
+      "ts_completado": null,
+      "chat_history": []
     },
     {
       "id": "etapa_005",
@@ -60,7 +81,8 @@
       "opciones": [],
       "estado": "pendiente",
       "resultado": null,
-      "ts_completado": null
+      "ts_completado": null,
+      "chat_history": []
     },
     {
       "id": "etapa_006",
@@ -72,7 +94,8 @@
       "opciones": [],
       "estado": "pendiente",
       "resultado": null,
-      "ts_completado": null
+      "ts_completado": null,
+      "chat_history": []
     },
     {
       "id": "etapa_007",
@@ -84,10 +107,11 @@
       "opciones": [],
       "estado": "pendiente",
       "resultado": null,
-      "ts_completado": null
+      "ts_completado": null,
+      "chat_history": []
     }
   ],
   "guardada": true,
-  "path": null,
-  "timestamp": "2026-03-25T15:55:45.467763"
+  "path": "/home/fredyast/projects/SLNFIS_4/DATOS/cinta_f3_cinta_1_costeo_abc_ur.json",
+  "timestamp": "2026-03-25T16:59:32.801531"
 }

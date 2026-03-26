@@ -1,0 +1,396 @@
+{
+  "nombre": "Cinta 2  Costeo Abc Ur",
+  "descripcion": "Esta es la segunda cinta Creada",
+  "etapas": [
+    {
+      "id": "etapa_001",
+      "nombre": "SeleciónAsignaturas",
+      "nombre_agente": "AsistenteSeleccionadorAsignaturas",
+      "descripcion": "hitl  permite selecionar asignaturas",
+      "tipo": "hitl",
+      "system_prompt": "Ayuda al humano  a estructuras  su  etapa",
+      "instrucciones_adicionales": "debe poder  seleccionar  las asignaturas",
+      "plantilla_archivo": "selector_jerarquico.py",
+      "pregunta": "Pude  Selecionar las asignaturas",
+      "tipo_respuesta": "si_no",
+      "opciones": [],
+      "arq_context": [
+        {
+          "role": "user",
+          "content": "el usuario en esta etapa  debe poder  selecionar multiples  asignaturas ,  si no selecciona  al menos una, no podra activar el boton ejecutar"
+        },
+        {
+          "role": "assistant",
+          "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real."
+        }
+      ],
+      "estado": "completado",
+      "resultado": "HITL → Sí | seleccionamos blockchain",
+      "respuesta_hitl": "Sí",
+      "comentarios_hitl": "seleccionamos blockchain",
+      "ts_completado": "2026-03-25T21:58:36.286438",
+      "chat_history": [
+        {
+          "role": "user",
+          "content": "dime  que asignaturas  fueron cargadas"
+        },
+        {
+          "role": "assistant",
+          "content": "[AsistenteSeleccionadorAsignaturas] Validación concluida. Sistema listo para ejecutar esta etapa."
+        }
+      ],
+      "artefacto_path": "/home/fredyast/projects/SLNFIS_4/DATOS/artefacto_cinta_2__costeo_abc_ur_etapa_001.html"
+    },
+    {
+      "id": "etapa_002",
+      "nombre": "parametrosCosteo",
+      "nombre_agente": "AsistenteParametrizacionCosteo",
+      "descripcion": "Permite  capturar los valores de  costeo como el valos profesor # profesores # estudiantes # clase de la asignatura en un semestre",
+      "tipo": "hitl",
+      "system_prompt": "Eres un asistente de  costeo  validas  la asignacion correcta de parametros  para asignar valor   a las variables de costeo",
+      "instrucciones_adicionales": "el usuario debe poder  capturar las variables de costeo complettas y contestar su pudo asignarles valor  si falta alguna al cargar la pestaña debe por defecto tener los mismos  valores por defecto  de los flujos 1 y 2",
+      "plantilla_archivo": "parametros_costeo.py",
+      "pregunta": "Pude diligenciar y validar  todas las variables de costeo",
+      "tipo_respuesta": "si_no",
+      "opciones": [],
+      "arq_context": [
+        {
+          "role": "user",
+          "content": "el usuario en esta etapa  debe poder  selecionar multiples  asignaturas ,  si no selecciona  al menos una, no podra activar el boton ejecutar"
+        },
+        {
+          "role": "assistant",
+          "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real."
+        },
+        {
+          "role": "user",
+          "content": "el usuario debe poder  capturar las variables de costeo complettas y contestar su pudo asignarles valor  si falta alguna al cargar la pestaña debe por defecto tener los mismos  valores por defecto  de los flujos 1 y 2"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        }
+      ],
+      "estado": "completado",
+      "resultado": "HITL → Sí | Se costea  Asignatura Blockchain",
+      "respuesta_hitl": "Sí",
+      "comentarios_hitl": "Se costea  Asignatura Blockchain",
+      "ts_completado": "2026-03-25T22:03:22.148372",
+      "chat_history": [
+        {
+          "role": "user",
+          "content": "cual es el costo unitario de la  asignatura BLOCKCHAIN"
+        },
+        {
+          "role": "assistant",
+          "content": "[AsistenteParametrizacionCosteo] Validación concluida. Sistema listo para ejecutar esta etapa."
+        }
+      ],
+      "artefacto_path": "/home/fredyast/projects/SLNFIS_4/DATOS/artefacto_cinta_2__costeo_abc_ur_etapa_002.html"
+    },
+    {
+      "id": "etapa_003",
+      "nombre": "CosteoAsignaturas",
+      "nombre_agente": "AgenteCosteoAsignaturas",
+      "descripcion": "A partir de los valores  de  cantidades y valores  costea los elementos  directos e indirectos de asignaturas",
+      "tipo": "agente",
+      "system_prompt": "Eres un agente   que  puede ejecutar  costeo_asignaturas.py  y  conoces las  reglas  de costeo de asignaturas , aplicas  el calculo y generas un  reporte  del  mismo  paso a paso",
+      "instrucciones_adicionales": "muestra el resultado paso a paso del proceso de costeo",
+      "plantilla_archivo": "costeo_asignaturas.py",
+      "pregunta": "",
+      "tipo_respuesta": "si_no",
+      "opciones": [],
+      "arq_context": [
+        {
+          "role": "user",
+          "content": "el usuario en esta etapa  debe poder  selecionar multiples  asignaturas ,  si no selecciona  al menos una, no podra activar el boton ejecutar"
+        },
+        {
+          "role": "assistant",
+          "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real."
+        },
+        {
+          "role": "user",
+          "content": "el usuario debe poder  capturar las variables de costeo complettas y contestar su pudo asignarles valor  si falta alguna al cargar la pestaña debe por defecto tener los mismos  valores por defecto  de los flujos 1 y 2"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        }
+      ],
+      "estado": "completado",
+      "resultado": "Procesamiento autónomo exitoso. Artefacto JSON generado.",
+      "respuesta_hitl": null,
+      "comentarios_hitl": "",
+      "ts_completado": "2026-03-25T22:06:03.576846",
+      "chat_history": [
+        {
+          "role": "user",
+          "content": "genera el costeo de  BlockChain"
+        },
+        {
+          "role": "assistant",
+          "content": "[AgenteCosteoAsignaturas] Operando bajo: *'Eres un agente   que  puede ejecutar  costeo_asign...'*. Insumo recibido: 'genera el costeo de  BlockChain'. Procesando."
+        }
+      ],
+      "artefacto_path": "/home/fredyast/projects/SLNFIS_4/DATOS/artefacto_cinta_2__costeo_abc_ur_etapa_003.html"
+    },
+    {
+      "id": "etapa_004",
+      "nombre": "formulario_hitl_utilidad",
+      "nombre_agente": "AsistenteValoraUtilidadProceso",
+      "descripcion": "El  usuario califica  y da valores de 1 a 5  a preguntas  que  se normalizan a valores entre 0y1  y sirven para  calcular la utilidad simbiotica",
+      "tipo": "hitl",
+      "system_prompt": "Eres un asistente  que  guia al usuario  a generar  el formulario de utilidad  simbiotica",
+      "instrucciones_adicionales": "debes capturar los valores de cada variable requerida  para  generar  la utilidad  simbiotica",
+      "plantilla_archivo": "formulario_hitl_utilidad.py",
+      "pregunta": "pude diligenciar totalmente  la  valoración  de Utilidad simbiotica y la pestaña   correspondiente a esta etapa  me permito visualizar  el calculo de utilidad simbiotica?",
+      "tipo_respuesta": "si_no",
+      "opciones": [],
+      "arq_context": [
+        {
+          "role": "user",
+          "content": "el usuario debe poder  capturar las variables de costeo complettas y contestar su pudo asignarles valor  si falta alguna al cargar la pestaña debe por defecto tener los mismos  valores por defecto  de los flujos 1 y 2"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        },
+        {
+          "role": "user",
+          "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+        },
+        {
+          "role": "assistant",
+          "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        },
+        {
+          "role": "user",
+          "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        }
+      ],
+      "estado": "completado",
+      "resultado": "HITL → Sí | SE  CALCULA LA UTILIDAD SIMBIOTICA 3 VECES",
+      "respuesta_hitl": "Sí",
+      "comentarios_hitl": "SE  CALCULA LA UTILIDAD SIMBIOTICA 3 VECES",
+      "ts_completado": "2026-03-25T22:15:23.439450",
+      "chat_history": [
+        {
+          "role": "user",
+          "content": "SOLICITA LOS VALORES  DE  DORMULARIO HITL"
+        },
+        {
+          "role": "assistant",
+          "content": "[AsistenteValoraUtilidadProceso] Análisis completado sobre 'SOLICITA LOS VALORES  DE  DORMULARIO HITL'. Los parámetros son consistentes."
+        }
+      ],
+      "artefacto_path": null
+    },
+    {
+      "id": "etapa_005",
+      "nombre": "calculaUtilidadSimbiotica",
+      "nombre_agente": "AgenteCalculaUtilidadSimbiotica",
+      "descripcion": "a partir del formulario hitl  utilidad calcula la utilidad simbiotica",
+      "tipo": "agente",
+      "system_prompt": "Eres un agente  que  ejecuta el modelo matematico  del  archivo calculaUtilidadSimbiotica.py y muestra los resultados en la pestaña de la etapa",
+      "instrucciones_adicionales": "debe explicar  paso a paso el calculo de utilidad simbiotica a partir  del formulario",
+      "plantilla_archivo": "calculaUtilidadSimbiotica.py",
+      "pregunta": "",
+      "tipo_respuesta": "si_no",
+      "opciones": [],
+      "arq_context": [
+        {
+          "role": "user",
+          "content": "el usuario debe poder  capturar las variables de costeo complettas y contestar su pudo asignarles valor  si falta alguna al cargar la pestaña debe por defecto tener los mismos  valores por defecto  de los flujos 1 y 2"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        },
+        {
+          "role": "user",
+          "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+        },
+        {
+          "role": "assistant",
+          "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        },
+        {
+          "role": "user",
+          "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        }
+      ],
+      "estado": "completado",
+      "resultado": "Procesamiento autónomo exitoso. Artefacto JSON generado.",
+      "respuesta_hitl": null,
+      "comentarios_hitl": "",
+      "ts_completado": "2026-03-25T22:19:01.812240",
+      "chat_history": [
+        {
+          "role": "user",
+          "content": "CALCULA  LA UTILIDAD  SIMBIOTICA"
+        },
+        {
+          "role": "assistant",
+          "content": "[AgenteCalculaUtilidadSimbiotica] Análisis completado sobre 'CALCULA  LA UTILIDAD  SIMBIOTICA'. Los parámetros son consistentes."
+        }
+      ],
+      "artefacto_path": "/home/fredyast/projects/SLNFIS_4/DATOS/artefacto_cinta_2__costeo_abc_ur_etapa_005.html"
+    },
+    {
+      "id": "etapa_006",
+      "nombre": "calculaSimbiomemesis",
+      "nombre_agente": "AgenteCalcularSimbiomemesis",
+      "descripcion": "Toma varios calculos de utilidad  simbiotica y calcula  la  razon de cambionde la simbiomemesis",
+      "tipo": "agente",
+      "system_prompt": "Erea un agente  que  calcula  la razonde cambio de la simnbiomemesis",
+      "instrucciones_adicionales": "debe validar  que   la cinta tenga asociada  al menos el calculo de dos utilidades simbioticas para poder calcular   la simbiomemesis",
+      "plantilla_archivo": "calculaSimbiomemesis.py",
+      "pregunta": "",
+      "tipo_respuesta": "si_no",
+      "opciones": [],
+      "arq_context": [
+        {
+          "role": "user",
+          "content": "el usuario debe poder  capturar las variables de costeo complettas y contestar su pudo asignarles valor  si falta alguna al cargar la pestaña debe por defecto tener los mismos  valores por defecto  de los flujos 1 y 2"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        },
+        {
+          "role": "user",
+          "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+        },
+        {
+          "role": "assistant",
+          "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        },
+        {
+          "role": "user",
+          "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        }
+      ],
+      "estado": "completado",
+      "resultado": "Procesamiento autónomo exitoso. Artefacto JSON generado.",
+      "respuesta_hitl": null,
+      "comentarios_hitl": "",
+      "ts_completado": "2026-03-25T22:19:47.111962",
+      "chat_history": [
+        {
+          "role": "user",
+          "content": "calcular  simbiomemesis"
+        },
+        {
+          "role": "assistant",
+          "content": "[AgenteCalcularSimbiomemesis] Validación concluida. Sistema listo para ejecutar esta etapa."
+        }
+      ],
+      "artefacto_path": "/home/fredyast/projects/SLNFIS_4/DATOS/artefacto_cinta_2__costeo_abc_ur_etapa_006.html"
+    },
+    {
+      "id": "etapa_007",
+      "nombre": "AnalizaSimbiomemesis",
+      "nombre_agente": "AgenteAnalistaSimbiomemesis",
+      "descripcion": "Analiza la adopcion del Proceso con Simbiomemsis",
+      "tipo": "agente",
+      "system_prompt": "Eres un analista de simbiomemesis  presentas  la razon de cambio de simbiomemesis  del proceso comparando los tres flujos",
+      "instrucciones_adicionales": "debes en la pestaña  graficar los casos",
+      "plantilla_archivo": "analisis_simbiomemesis.py",
+      "pregunta": "",
+      "tipo_respuesta": "si_no",
+      "opciones": [],
+      "arq_context": [
+        {
+          "role": "user",
+          "content": "el usuario debe poder  capturar las variables de costeo complettas y contestar su pudo asignarles valor  si falta alguna al cargar la pestaña debe por defecto tener los mismos  valores por defecto  de los flujos 1 y 2"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        },
+        {
+          "role": "user",
+          "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+        },
+        {
+          "role": "assistant",
+          "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        },
+        {
+          "role": "user",
+          "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+        },
+        {
+          "role": "assistant",
+          "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+        }
+      ],
+      "estado": "pendiente",
+      "resultado": null,
+      "respuesta_hitl": null,
+      "comentarios_hitl": "",
+      "ts_completado": null,
+      "chat_history": [
+        {
+          "role": "user",
+          "content": "genera el calculo"
+        },
+        {
+          "role": "assistant",
+          "content": "[AgenteAnalistaSimbiomemesis] Análisis completado sobre 'genera el calculo'. Los parámetros son consistentes."
+        }
+      ],
+      "artefacto_path": "/home/fredyast/projects/SLNFIS_4/DATOS/artefacto_cinta_2__costeo_abc_ur_etapa_007.html"
+    }
+  ],
+  "guardada": true,
+  "path": "/home/fredyast/projects/SLNFIS_4/DATOS/cinta_f3_cinta_2__costeo_abc_ur.json",
+  "timestamp": "2026-03-25T22:23:10.565941",
+  "arq_chat_history": [
+    {
+      "role": "user",
+      "content": "el usuario en esta etapa  debe poder  selecionar multiples  asignaturas ,  si no selecciona  al menos una, no podra activar el boton ejecutar"
+    },
+    {
+      "role": "assistant",
+      "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real."
+    },
+    {
+      "role": "user",
+      "content": "el usuario debe poder  capturar las variables de costeo complettas y contestar su pudo asignarles valor  si falta alguna al cargar la pestaña debe por defecto tener los mismos  valores por defecto  de los flujos 1 y 2"
+    },
+    {
+      "role": "assistant",
+      "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+    },
+    {
+      "role": "user",
+      "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+    },
+    {
+      "role": "assistant",
+      "content": "Basado en tu descripción:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+    },
+    {
+      "role": "user",
+      "content": "la  pestaña  debe  poder tener  dos  botones  rehacer  seleccionando  un json  de  costeo de asignatura ya ejecutado y un boton de usar  para activar la siguiente  etapa"
+    },
+    {
+      "role": "assistant",
+      "content": "Mis recomendaciones para esta etapa:\n\n- **Plantilla sugerida:** `selector_jerarquico.py` — permite al usuario escoger Facultad → Programa → Asignatura desde el Excel real.\n\n- **Plantilla sugerida:** `costeo_asignaturas.py` — calcula costos ABC sobre la selección de la etapa anterior.\n\n- **También útil:** `parametros_costeo.py` — formulario para ingresar m², valor hora-profesor, licencias, etc."
+    }
+  ]
+}
