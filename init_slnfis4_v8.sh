@@ -7,7 +7,7 @@
 # =============================================================================
 
 ENTORNO="venvFIS_Rosario"
-ORQUESTADOR="fis_orquestador_v8.py"
+PORTAL="PORTAL_FIS/portal_fis.py"
 PROJ_DIR="/home/fredyast/projects/SLNFIS_4"
 
 echo "🏛️  Iniciando Ecosistema Symbiomemesis v8.1 (SLN_FIS4)..."
@@ -49,20 +49,21 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# 6. Lanzamiento del Orquestador (Streamlit)
-echo "🚀 Lanzando Orquestador Maestro FIS v8 (HITL Interface)..."
-if [ ! -f "$ORQUESTADOR" ]; then
-    echo "import streamlit as st; st.title('FIS v8.1: Orquestador Maestro')" > $ORQUESTADOR
-fi
+# 6. Lanzamiento del Portal FIS (Streamlit)
+echo "🚀 Lanzando Portal FIS v8.1 (HITL Interface)..."
 
 # Matar procesos previos en el puerto 8501 para evitar conflictos
 fuser -k 8501/tcp 2>/dev/null
 
-streamlit run $ORQUESTADOR --server.address 0.0.0.0 --server.port 8501 &
+streamlit run $PROJ_DIR/$PORTAL \
+    --server.address 0.0.0.0 \
+    --server.port 8501 \
+    --server.runOnSave true &
 STREAMLIT_PID=$!
 sleep 4
 
 # 7. Terminal de Control Interactiva para el Auditor
+echo "🌐 Portal disponible en: http://localhost:8501"
 echo "🕵️  Terminal de Auditoría v8.1 Activa | Auditor: Ing. Fredy Sarmiento."
 echo "🔄 Sincronizado con entorno Conda: $ENTORNO"
 
