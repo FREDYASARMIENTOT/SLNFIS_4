@@ -158,7 +158,8 @@ with st.sidebar:
     st.page_link("pages/01_flujo_humano.py",      label="🙋  Flujo 1: Humano",             icon="1️⃣")
     st.page_link("pages/02_flujo_agentes_ia.py",  label="🤖  Flujo 2: Agentes IA",         icon="2️⃣")
     st.page_link("pages/03_flujo_fis.py",         label="🧬  Flujo 3: FIS Simbiomemésico", icon="3️⃣")
-    st.page_link("pages/04_simulador_fis.py",     label="📊  Simulador Diferencial",        icon="📊")
+    st.page_link("pages/04_simulador_fis.py",              label="📊  Simulador Diferencial",          icon="📊")
+    st.page_link("pages/05_fabrica_agentes.py",            label="🛠️  Fábrica & Skills",             icon="🛠️")
 
 # =============================================================================
 # FOOTER

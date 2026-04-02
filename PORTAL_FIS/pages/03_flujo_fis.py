@@ -330,7 +330,8 @@ def render_sidebar_crud():
         st.page_link("pages/01_flujo_humano.py",     label="🙋  Flujo 1: Humano")
         st.page_link("pages/02_flujo_agentes_ia.py", label="🤖  Flujo 2: Agentes IA")
         st.page_link("pages/03_flujo_fis.py",        label="🧬  Flujo 3: FIS")
-        st.page_link("pages/04_simulador_fis.py",    label="📊  Simulador Diferencial")
+        st.page_link("pages/04_simulador_fis.py",    label="📊  Simulador Diferencial", icon="📊")
+        st.page_link("pages/05_fabrica_agentes.py",  label="🛠️  Fábrica & Skills",             icon="🛠️")
         st.markdown("---")
 
         if st.button("📂 Consultar Flujos", key="btn_crud", use_container_width=True):
